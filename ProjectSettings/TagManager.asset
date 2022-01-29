@@ -11,17 +11,17 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - WorldBounds
+  - Phy_Environment
+  - Phy_Player
+  - Phy_Projectiles
+  - Spr_Environment
+  - Spr_Player
+  - Spr_Projectiles
+  - Enm_Zombie
+  - Enm_Demon
+  - Enm_Medusa
+  - Enm_Skull
   - 
   - 
   - 
