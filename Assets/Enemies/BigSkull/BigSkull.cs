@@ -1,0 +1,81 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class BigSkull : MonoBehaviour
+{
+    [Header("Behaviour Variables")]
+    
+    [Tooltip("Scales the force applied each frame, which affects how quickly object is able to change direction.")]
+    public float thrust;
+    [Tooltip("Maximum allowable velocity of the skull in any direction.")]
+    public float maxVelocity;
+    [Tooltip("Distance from the target that the skull will start chomping at.")]
+    public float chompProximity;
+
+    // Internal References
+    Rigidbody2D rb;
+    Animator anim;
+    Vector2 target;
+
+    void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
+        anim = GetComponentInChildren<Animator>();
+        target = transform.position;
+    }
+
+    void Update()
+    {
+        __TestDirection();
+        Move();
+        ClampVelocity();
+        Chomp();
+    }
+
+    private void Move()
+	{
+        Vector2 currentPos = new Vector2(transform.position.x, transform.position.y);
+        Vector2 direction = (target - currentPos).normalized;
+
+        rb.AddForce(direction * thrust);
+		anim.SetFloat("xVel", rb.velocity.x);
+	}
+
+    private void ClampVelocity()
+	{
+        if(rb.velocity.x >= maxVelocity) {
+            rb.velocity = new Vector2(maxVelocity, rb.velocity.y);
+        }
+        else if (rb.velocity.x <= -maxVelocity) {
+            rb.velocity = new Vector2(-maxVelocity, rb.velocity.y);
+        }
+
+        if (rb.velocity.y >= maxVelocity) {
+            rb.velocity = new Vector2(rb.velocity.x, maxVelocity);
+        }
+        else if (rb.velocity.y <= -maxVelocity) {
+            rb.velocity = new Vector2(rb.velocity.x, -maxVelocity);
+        }
+    }
+
+    private void Chomp()
+	{
+        if(Vector3.Distance(target, transform.position) <= chompProximity) {
+            anim.SetBool("Chomping", true);
+		}
+        else {
+            anim.SetBool("Chomping", false);
+        }
+	}
+
+    private void __TestDirection()
+	{
+        if (Vector3.Distance(target, transform.position) <= .25f)
+		{
+            float xPos = Random.Range(-3.5f, 3.5f);
+            float yPos = Random.Range(-1, 2);
+            target = new Vector2(xPos, yPos);
+        }
+	}
+}
