@@ -58,10 +58,10 @@ using NoSleep.IOC;
         switch (act)
 		{
             case InputAction.SpaceDown:
-
+                Debug.Log("And I heard it!");
                 break;
             case InputAction.SpaceUp:
-
+                Debug.Log("And I heard it!");
                 break;
         }
 	}
