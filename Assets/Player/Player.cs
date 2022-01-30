@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+//using UnityEngine.InputSystem;
 using NoSleep.IOC;
 
 [Dock] public class Player : MonoBehaviour
@@ -19,7 +20,11 @@ using NoSleep.IOC;
     public int MaxMana;
     public int CurrentMana;
 
+    [Header("Movement Variables")]
+    public float jumpThrust;
+
     // Internal References
+    Rigidbody2D rb;
 
     /// <summary>
     /// Gameobject reference to the currently active body to manipulate for movement. Toggles between body and spirit.
@@ -30,6 +35,8 @@ using NoSleep.IOC;
     private void Start()
     {
         Signals.Get<Sig_Input_Space>().AddListener(HandleInput);
+
+        rb = body.GetComponent<Rigidbody2D>();
     }
 
     private void Update()
@@ -55,12 +62,14 @@ using NoSleep.IOC;
 
 	private void HandleInput(InputAction act)
 	{
+        //var keyboard = 
+
         switch (act)
 		{
-            case InputAction.SpaceDown:
-                Debug.Log("And I heard it!");
+            case InputAction.Space_Down:
+                Jump();
                 break;
-            case InputAction.SpaceUp:
+            case InputAction.Space_Up:
                 Debug.Log("And I heard it!");
                 break;
         }
@@ -73,7 +82,7 @@ using NoSleep.IOC;
 
     private void Jump()
 	{
-
+        rb.AddForce(Vector2.up * jumpThrust);
 	}
 
     private void SwitchForm()
@@ -87,11 +96,12 @@ using NoSleep.IOC;
             case PlayerState.Spirit:
                 State = PlayerState.Body;
                 activeBody = body;
+                
                 break;
             case PlayerState.Dead:
                 return;
         }
-	}
 
-
+        rb = activeBody.GetComponent<Rigidbody2D>();
+    }
 }
