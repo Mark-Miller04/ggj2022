@@ -39,9 +39,10 @@ using NoSleep.IOC;
     #region Unity Lifecycle Methods
     private void Start()
     {
-        rb = body.GetComponent<Rigidbody2D>();
-        anim = body.GetComponentInChildren<Animator>();
-        activeCamera = body.GetComponentInChildren<Camera>();
+        activeBody = body;
+        rb = activeBody.GetComponent<Rigidbody2D>();
+        anim = activeBody.GetComponentInChildren<Animator>();
+        activeCamera = activeBody.GetComponentInChildren<Camera>();
     }
 
     private void Update()
@@ -115,12 +116,18 @@ using NoSleep.IOC;
         switch(State)
 		{
             case PlayerState.Body:
-                State = PlayerState.Spirit;
+                rb.velocity = Vector2.zero;
                 activeBody = spirit;
+                activeBody.transform.position = body.transform.position;
+                activeBody.SetActive(true);
+                State = PlayerState.Spirit;
                 break;
             case PlayerState.Spirit:
-                State = PlayerState.Body;
+                rb.velocity = Vector2.zero;
+                activeBody.SetActive(false);
+                activeBody.transform.position = body.transform.position;
                 activeBody = body;
+                State = PlayerState.Body;
                 break;
             case PlayerState.Dead:
                 return;
