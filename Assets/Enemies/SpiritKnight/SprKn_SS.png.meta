@@ -1,43 +1,43 @@
 fileFormatVersion: 2
-guid: 5745b79d036fdfd4e873ab149e5f5079
+guid: b4bf0f449d3d7e6439a39af2fcdf4669
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 10778933979446769
-    second: Zombie_Walk_R_1
+      213: 6641883336660078042
+    second: SptKn_Walk_R_0
   - first:
-      213: -2481171121052457351
-    second: Zombie_Walk_R_0
+      213: 3202086238730119874
+    second: SptKn_Walk_R_1
   - first:
-      213: -3661810639543485006
-    second: Zombie_Walk_R_3
+      213: 7288654444435460855
+    second: SptKn_Walk_R_2
   - first:
-      213: -3029104019398066051
-    second: Zombie_Walk_R_0
+      213: -6483144430951520360
+    second: SptKn_Walk_R_3
   - first:
-      213: -2364806623804099386
-    second: Zombie_Walk_R_1
+      213: -3053039771908563964
+    second: SptKn_Walk_R_4
   - first:
-      213: -657550191444460363
-    second: Zombie_Walk_R_2
+      213: -4770391134998469818
+    second: SptKn_Walk_R_5
   - first:
-      213: 5645842934446432927
-    second: Zombie_Walk_L_0
+      213: 8112306386579164416
+    second: SptKn_Walk_L_0
   - first:
-      213: 536696973893019173
-    second: Zombie_Walk_L_1
+      213: 6607894549832868578
+    second: SptKn_Walk_L_1
   - first:
-      213: -5599484400377603647
-    second: Zombie_Walk_L_2
+      213: -6882678128089374559
+    second: SptKn_Walk_L_2
   - first:
-      213: 8082062626063388173
-    second: Zombie_Walk_L_3
+      213: 7623602553577059943
+    second: SptKn_Walk_L_3
   - first:
-      213: 2180856374589573853
-    second: Zombie_Walk_L_4
+      213: 8625753737875860498
+    second: SptKn_Walk_L_4
   - first:
-      213: -7242110467129654723
-    second: Zombie_Walk_L_5
+      213: -3384475039998370024
+    second: SptKn_Walk_L_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -127,13 +127,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Zombie_Walk_R_5
+      name: SptKn_Walk_R_0
       rect:
         serializedVersion: 2
-        x: 17
-        y: 62
-        width: 26
-        height: 42
+        x: 95
+        y: 48
+        width: 43
+        height: 47
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,20 +141,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1fdf6e2226b462000800000000000000
-      internalID: 10778933979446769
+      spriteID: addc53954b5bc2c50800000000000000
+      internalID: 6641883336660078042
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Zombie_Walk_R_4
+      name: SptKn_Walk_R_1
       rect:
         serializedVersion: 2
-        x: 66
-        y: 62
-        width: 26
-        height: 42
+        x: 48
+        y: 48
+        width: 43
+        height: 47
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -162,20 +162,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 976e5bed20c119dd0800000000000000
-      internalID: -2481171121052457351
+      spriteID: 2caecaff778107c20800000000000000
+      internalID: 3202086238730119874
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Zombie_Walk_R_3
+      name: SptKn_Walk_R_2
       rect:
         serializedVersion: 2
-        x: 115
-        y: 62
-        width: 26
-        height: 42
+        x: 0
+        y: 48
+        width: 43
+        height: 47
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -183,20 +183,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2bdb34bdf92ae2dc0800000000000000
-      internalID: -3661810639543485006
+      spriteID: 7f2d52ba990862560800000000000000
+      internalID: 7288654444435460855
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Zombie_Walk_R_0
+      name: SptKn_Walk_R_3
       rect:
         serializedVersion: 2
-        x: 258
-        y: 62
-        width: 26
-        height: 42
+        x: 238
+        y: 48
+        width: 43
+        height: 47
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -204,20 +204,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d70021871f576f5d0800000000000000
-      internalID: -3029104019398066051
+      spriteID: 897259d3d7e3706a0800000000000000
+      internalID: -6483144430951520360
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Zombie_Walk_R_1
+      name: SptKn_Walk_R_4
       rect:
         serializedVersion: 2
-        x: 210
-        y: 62
-        width: 26
-        height: 42
+        x: 192
+        y: 48
+        width: 43
+        height: 47
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -225,20 +225,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6c47aa9a7e48e2fd0800000000000000
-      internalID: -2364806623804099386
+      spriteID: 40c104ec08c61a5d0800000000000000
+      internalID: -3053039771908563964
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Zombie_Walk_R_2
+      name: SptKn_Walk_R_5
       rect:
         serializedVersion: 2
-        x: 161
-        y: 62
-        width: 26
-        height: 43
+        x: 144
+        y: 48
+        width: 43
+        height: 47
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -246,20 +246,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5bc76f0b599efd6f0800000000000000
-      internalID: -657550191444460363
+      spriteID: 6436ebe898a2ccdb0800000000000000
+      internalID: -4770391134998469818
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Zombie_Walk_L_0
+      name: SptKn_Walk_L_0
       rect:
         serializedVersion: 2
-        x: 15
-        y: 14
-        width: 26
-        height: 42
+        x: 0
+        y: 0
+        width: 43
+        height: 47
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -267,20 +267,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f9224556c301a5e40800000000000000
-      internalID: 5645842934446432927
+      spriteID: 00d0f218da3b49070800000000000000
+      internalID: 8112306386579164416
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Zombie_Walk_L_1
+      name: SptKn_Walk_L_1
       rect:
         serializedVersion: 2
-        x: 64
-        y: 14
-        width: 26
-        height: 42
+        x: 46
+        y: 0
+        width: 43
+        height: 47
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,20 +288,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 526abe0ed0bb27700800000000000000
-      internalID: 536696973893019173
+      spriteID: 2e2270c3515f3bb50800000000000000
+      internalID: 6607894549832868578
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Zombie_Walk_L_2
+      name: SptKn_Walk_L_2
       rect:
         serializedVersion: 2
-        x: 113
-        y: 14
-        width: 26
-        height: 43
+        x: 94
+        y: 0
+        width: 43
+        height: 47
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -309,20 +309,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1c9d62eea92aa42b0800000000000000
-      internalID: -5599484400377603647
+      spriteID: 1a0e1ef55b0db70a0800000000000000
+      internalID: -6882678128089374559
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Zombie_Walk_L_3
+      name: SptKn_Walk_L_3
       rect:
         serializedVersion: 2
-        x: 159
-        y: 14
-        width: 26
-        height: 42
+        x: 143
+        y: 0
+        width: 43
+        height: 47
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -330,20 +330,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d0e08f64321492070800000000000000
-      internalID: 8082062626063388173
+      spriteID: 766b8b2812a7cc960800000000000000
+      internalID: 7623602553577059943
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Zombie_Walk_L_4
+      name: SptKn_Walk_L_4
       rect:
         serializedVersion: 2
-        x: 208
-        y: 14
-        width: 26
-        height: 42
+        x: 191
+        y: 0
+        width: 43
+        height: 47
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -351,20 +351,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ddace896155f34e10800000000000000
-      internalID: 2180856374589573853
+      spriteID: 21ca61ac255d4b770800000000000000
+      internalID: 8625753737875860498
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Zombie_Walk_L_5
+      name: SptKn_Walk_L_5
       rect:
         serializedVersion: 2
-        x: 257
-        y: 14
-        width: 26
-        height: 42
+        x: 238
+        y: 0
+        width: 43
+        height: 47
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -372,8 +372,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d32499686eade7b90800000000000000
-      internalID: -7242110467129654723
+      spriteID: 81f98b102ede701d0800000000000000
+      internalID: -3384475039998370024
       vertices: []
       indices: 
       edges: []
@@ -381,7 +381,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: c0e3cc0a6e8ed074d840e931a357fd11
+    spriteID: 737faab695921364f84f941f7ec04bf8
     internalID: 0
     vertices: []
     indices: 

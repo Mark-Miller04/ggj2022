@@ -19,7 +19,7 @@ TagManager:
   - Spr_Player
   - Spr_Projectiles
   - Enm_Zombie
-  - Enm_Demon
+  - Enm_SprKn
   - Enm_Medusa
   - Enm_Skull
   - 

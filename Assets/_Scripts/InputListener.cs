@@ -44,8 +44,8 @@ public class InputListener : MonoBehaviour
 
     void ButtonUps()
 	{
-        if (Input.GetButtonUp("Jump")) {
-            Signals.Get<Sig_Input_Space>().Dispatch(InputAction.Space_Up);
-        }
+        //if (Input.GetButtonUp("Jump")) {
+        //    Signals.Get<Sig_Input_Space>().Dispatch(InputAction.Space_Up);
+        //}
     }
 }
