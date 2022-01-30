@@ -6,7 +6,7 @@ using NoSleep.IOC;
 
 [Dock] public class GameManager : MonoBehaviour
 {
-    [Dock] private Player player;
+    [Dock] public Player player;
 
     // Input Devices
     public Keyboard activeKeyboard;

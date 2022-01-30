@@ -1,9 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using NoSleep.IOC;
 
 public class BigSkull : MonoBehaviour
 {
+    [Dock] GameManager gameManager;
+    [Dock] Player player;
+
     [Header("Behaviour Variables")]
     
     [Tooltip("Scales the force applied each frame, which affects how quickly object is able to change direction.")]
@@ -27,11 +31,21 @@ public class BigSkull : MonoBehaviour
 
     void Update()
     {
-        __TestDirection();
+        SetTarget();
         Move();
         ClampVelocity();
         Chomp();
     }
+
+    private void SetTarget()
+	{
+        if(player != null) {
+            target = player.body.transform.position;
+		}
+        else {
+            __TestDirection();
+        }
+	}
 
     private void Move()
 	{

@@ -9,9 +9,10 @@ using NoSleep.IOC;
     public enum PlayerState { Body, Spirit, Dead };
 
     [Header("Game Scene References")]
-    [SerializeField] private GameObject body;
-    [SerializeField] private GameObject spirit;
-    [SerializeField] private Camera activeCamera;
+    public GameObject body;
+    public Camera bodyCamera;
+    public GameObject spirit;
+    public Camera spiritCamera;
 
     [Header("Status Variables")]
     public PlayerState State = PlayerState.Body;
@@ -35,6 +36,8 @@ using NoSleep.IOC;
     /// Gameobject reference to the currently active body to manipulate for movement. Toggles between body and spirit.
     /// </summary>
     private GameObject activeBody;
+    private Camera activeCamera;
+
 
     #region Unity Lifecycle Methods
     private void Start()
@@ -120,6 +123,8 @@ using NoSleep.IOC;
                 activeBody = spirit;
                 activeBody.transform.position = body.transform.position;
                 activeBody.SetActive(true);
+                spiritCamera.gameObject.SetActive(true);
+                bodyCamera.gameObject.SetActive(false);
                 State = PlayerState.Spirit;
                 break;
             case PlayerState.Spirit:
@@ -127,6 +132,8 @@ using NoSleep.IOC;
                 activeBody.SetActive(false);
                 activeBody.transform.position = body.transform.position;
                 activeBody = body;
+                bodyCamera.gameObject.SetActive(true);
+                spiritCamera.gameObject.SetActive(false);
                 State = PlayerState.Body;
                 break;
             case PlayerState.Dead:
