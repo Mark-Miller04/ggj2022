@@ -4,10 +4,46 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: 760858753263220228
-    second: Body_Walk_R_0
+    second: Body_Walk_L_1
   - first:
       213: -3022183057937157773
     second: Body_Walk_L_0
+  - first:
+      213: 4564357113968998362
+    second: Body_Walk_L_2
+  - first:
+      213: 2849413773798306774
+    second: Body_Walk_L_3
+  - first:
+      213: 8309277357293423284
+    second: Body_Walk_L_5
+  - first:
+      213: 669601986899828521
+    second: Body_Walk_L_4
+  - first:
+      213: -5869769422706745856
+    second: Body_Walk_R_0
+  - first:
+      213: 5547098515271627903
+    second: Body_Walk_R_1
+  - first:
+      213: -4984296503080483976
+    second: Body_Walk_R_2
+  - first:
+      213: -4818759286919274622
+    second: Body_Walk_R_3
+  - first:
+      213: -8198345047000592766
+    second: Body_Walk_R_4
+  - first:
+      213: -508116857609005622
+    second: Body_Walk_R_5
+  - first:
+      213: -2392972351165005576
+    second: Body_Idle_R_0
+  - first:
+      213: 2993985912071861275
+    second: Body_Idle_L_0
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -97,15 +133,15 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Body_Walk_R_0
+      name: Body_Walk_L_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 90
+        y: 6
         width: 23
-        height: 43
+        height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -121,12 +157,12 @@ TextureImporter:
       name: Body_Walk_L_0
       rect:
         serializedVersion: 2
-        x: 32
-        y: 0
+        x: 61
+        y: 6
         width: 23
-        height: 43
+        height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -134,6 +170,258 @@ TextureImporter:
       bones: []
       spriteID: 371b371658c0f06d0800000000000000
       internalID: -3022183057937157773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Body_Walk_L_2
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 6
+        width: 23
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad73626bc9ad75f30800000000000000
+      internalID: 4564357113968998362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Body_Walk_L_3
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 6
+        width: 23
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d37a5dfab62b8720800000000000000
+      internalID: 2849413773798306774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Body_Walk_L_5
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 6
+        width: 23
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bacba56bbb705370800000000000000
+      internalID: 8309277357293423284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Body_Walk_L_4
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 6
+        width: 23
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92f5f0a9577ea4900800000000000000
+      internalID: 669601986899828521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Body_Walk_R_0
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 54
+        width: 23
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00e5d163fc36a8ea0800000000000000
+      internalID: -5869769422706745856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Body_Walk_R_1
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 54
+        width: 23
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f74bcd8b5b04bfc40800000000000000
+      internalID: 5547098515271627903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Body_Walk_R_2
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 54
+        width: 23
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8738aa60db834dab0800000000000000
+      internalID: -4984296503080483976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Body_Walk_R_3
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 54
+        width: 23
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28fdf0d95f3502db0800000000000000
+      internalID: -4818759286919274622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Body_Walk_R_4
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 54
+        width: 23
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28e427fcd90a93e80800000000000000
+      internalID: -8198345047000592766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Body_Walk_R_5
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 54
+        width: 23
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac5d3ddf86ec2f8f0800000000000000
+      internalID: -508116857609005622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Body_Idle_R_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 54
+        width: 23
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f08a7b33547aced0800000000000000
+      internalID: -2392972351165005576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Body_Idle_L_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 6
+        width: 23
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b14319ff256cc8920800000000000000
+      internalID: 2993985912071861275
       vertices: []
       indices: 
       edges: []

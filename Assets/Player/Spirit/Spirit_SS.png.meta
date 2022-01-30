@@ -8,6 +8,42 @@ TextureImporter:
   - first:
       213: -15792471128638770
     second: Spirit_Walk_L_0
+  - first:
+      213: 5477617500892821434
+    second: Spirit_Walk_R_1
+  - first:
+      213: 3397926871961289984
+    second: Spirit_Walk_R_2
+  - first:
+      213: -2168825515019319711
+    second: Spirit_Walk_R_3
+  - first:
+      213: -2117839687065750174
+    second: Spirit_Walk_R_4
+  - first:
+      213: -4711895068237343219
+    second: Spirit_Walk_R_5
+  - first:
+      213: -3960365710178971999
+    second: Spirit_Walk_L_1
+  - first:
+      213: 7480320149632793374
+    second: Spirit_Walk_L_2
+  - first:
+      213: -4988223207714709
+    second: Spirit_Walk_L_3
+  - first:
+      213: 4666179283397601980
+    second: Spirit_Walk_L_4
+  - first:
+      213: 482287853569149989
+    second: Spirit_Walk_L_5
+  - first:
+      213: 52383267036061662
+    second: Spirit_Idle_R_0
+  - first:
+      213: -7323858772746867123
+    second: Spirit_Idle_L_0
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -100,12 +136,12 @@ TextureImporter:
       name: Spirit_Walk_R_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 59
+        y: 54
         width: 23
-        height: 43
+        height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -121,12 +157,12 @@ TextureImporter:
       name: Spirit_Walk_L_0
       rect:
         serializedVersion: 2
-        x: 32
-        y: 0
+        x: 61
+        y: 6
         width: 23
-        height: 43
+        height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -134,6 +170,258 @@ TextureImporter:
       bones: []
       spriteID: eca7048c4d4e7cff0800000000000000
       internalID: -15792471128638770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spirit_Walk_R_1
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 54
+        width: 23
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab7fd2c6818640c40800000000000000
+      internalID: 5477617500892821434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spirit_Walk_R_2
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 54
+        width: 23
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 005c100bc7cd72f20800000000000000
+      internalID: 3397926871961289984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spirit_Walk_R_3
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 54
+        width: 23
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 166487d5fa8c6e1e0800000000000000
+      internalID: -2168825515019319711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spirit_Walk_R_4
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 54
+        width: 23
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 265b831860ceb92e0800000000000000
+      internalID: -2117839687065750174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spirit_Walk_R_5
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 54
+        width: 23
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d065cce666cfb9eb0800000000000000
+      internalID: -4711895068237343219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spirit_Walk_L_1
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 6
+        width: 23
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ae05289e54f909c0800000000000000
+      internalID: -3960365710178971999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spirit_Walk_L_2
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 6
+        width: 23
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1b3f0d2b8f6fc760800000000000000
+      internalID: 7480320149632793374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spirit_Walk_L_3
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 6
+        width: 23
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b60d4a7cc374eeff0800000000000000
+      internalID: -4988223207714709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spirit_Walk_L_4
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 6
+        width: 23
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cba6335f55991c040800000000000000
+      internalID: 4666179283397601980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spirit_Walk_L_5
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 6
+        width: 23
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52c897f5f3e61b600800000000000000
+      internalID: 482287853569149989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spirit_Idle_R_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 54
+        width: 23
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edfdbd7cd4a1ab000800000000000000
+      internalID: 52383267036061662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spirit_Idle_L_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 6
+        width: 23
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4e6b49ef3d6c5a90800000000000000
+      internalID: -7323858772746867123
       vertices: []
       indices: 
       edges: []
