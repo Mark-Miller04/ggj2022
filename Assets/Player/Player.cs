@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-//using UnityEngine.InputSystem;
+using UnityEngine.InputSystem;
 using NoSleep.IOC;
 
 [Dock] public class Player : MonoBehaviour
@@ -21,10 +21,15 @@ using NoSleep.IOC;
     public int CurrentMana;
 
     [Header("Movement Variables")]
+    public float moveThrust;
     public float jumpThrust;
+    public Vector2 maxVelocity;
 
     // Internal References
-    Rigidbody2D rb;
+    [Dock] private GameManager gameManager;
+    private Rigidbody2D rb;
+    private Animator anim;
+    private Vector2 moveDir = Vector2.zero;
 
     /// <summary>
     /// Gameobject reference to the currently active body to manipulate for movement. Toggles between body and spirit.
@@ -34,14 +39,15 @@ using NoSleep.IOC;
     #region Unity Lifecycle Methods
     private void Start()
     {
-        Signals.Get<Sig_Input_Space>().AddListener(HandleInput);
-
         rb = body.GetComponent<Rigidbody2D>();
+        anim = body.GetComponentInChildren<Animator>();
+        activeCamera = body.GetComponentInChildren<Camera>();
     }
 
     private void Update()
     {
-        
+        HandleInput();
+        Move();
     }
 
 	private void OnTriggerEnter2D(Collider2D other)
@@ -56,29 +62,48 @@ using NoSleep.IOC;
 
 	private void OnDestroy()
 	{
-        Signals.Get<Sig_Input_Space>().RemoveListener(HandleInput);
+
     }
 	#endregion
 
-	private void HandleInput(InputAction act)
+	private void HandleInput()
 	{
-        //var keyboard = 
+        // Assemble WSAD Vector. No y movement currently.
+        int x = 0, y = 0;
+        x += gameManager.activeKeyboard.dKey.isPressed == true ? 1 : 0;
+        x -= gameManager.activeKeyboard.aKey.isPressed == true ? 1 : 0;
+        // y += gameManager.activeKeyboard.wKey.isPressed == true ? 1 : 0;
+        // y -= gameManager.activeKeyboard.sKey.isPressed == true ? 1 : 0;
+        moveDir = new Vector2(x, y);
 
-        switch (act)
-		{
-            case InputAction.Space_Down:
-                Jump();
-                break;
-            case InputAction.Space_Up:
-                Debug.Log("And I heard it!");
-                break;
-        }
-	}
+        // Attempt other actions.
+        if (gameManager.activeKeyboard.spaceKey.wasPressedThisFrame) { Jump(); }
+        if (gameManager.activeKeyboard.rKey.wasPressedThisFrame) { SwitchForm(); }
+        if (gameManager.activeMouse.leftButton.wasPressedThisFrame) { Attack(); }
+    }
 
     private void Move()
 	{
+        if (moveDir.x != 0 || moveDir.y != 0) {
+            rb.AddForce(moveDir * moveThrust);
+		}
 
-	}
+        if (rb.velocity.x > maxVelocity.x) {
+            rb.velocity = new Vector2(maxVelocity.x, rb.velocity.y);
+        }
+        else if (rb.velocity.x < -maxVelocity.x) {
+            rb.velocity = new Vector2(-maxVelocity.x, rb.velocity.y);
+        }
+        // Don't clamp positive y velocity for now.
+        //if (rb.velocity.y > maxVelocity.y) {
+        //    rb.velocity = new Vector2(rb.velocity.x, maxVelocity);
+        //}
+        if (rb.velocity.y < -maxVelocity.y) {
+            rb.velocity = new Vector2(rb.velocity.x, -maxVelocity.y);
+        }
+
+        anim.SetFloat("xVel", rb.velocity.x);
+    }
 
     private void Jump()
 	{
@@ -96,12 +121,18 @@ using NoSleep.IOC;
             case PlayerState.Spirit:
                 State = PlayerState.Body;
                 activeBody = body;
-                
                 break;
             case PlayerState.Dead:
                 return;
         }
 
         rb = activeBody.GetComponent<Rigidbody2D>();
+        anim = activeBody.GetComponentInChildren<Animator>();
+        activeCamera = activeBody.GetComponentInChildren<Camera>();
     }
+
+    private void Attack()
+	{
+
+	}
 }

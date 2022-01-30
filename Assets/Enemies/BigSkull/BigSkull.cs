@@ -44,17 +44,17 @@ public class BigSkull : MonoBehaviour
 
     private void ClampVelocity()
 	{
-        if(rb.velocity.x >= maxVelocity) {
+        if(rb.velocity.x > maxVelocity) {
             rb.velocity = new Vector2(maxVelocity, rb.velocity.y);
         }
-        else if (rb.velocity.x <= -maxVelocity) {
+        else if (rb.velocity.x < -maxVelocity) {
             rb.velocity = new Vector2(-maxVelocity, rb.velocity.y);
         }
 
-        if (rb.velocity.y >= maxVelocity) {
+        if (rb.velocity.y > maxVelocity) {
             rb.velocity = new Vector2(rb.velocity.x, maxVelocity);
         }
-        else if (rb.velocity.y <= -maxVelocity) {
+        else if (rb.velocity.y < -maxVelocity) {
             rb.velocity = new Vector2(rb.velocity.x, -maxVelocity);
         }
     }
